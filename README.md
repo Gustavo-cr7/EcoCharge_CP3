@@ -35,7 +35,7 @@ A partir desses dados, o EcoCharge realiza uma simulação por horário.
 
 ---
 
-### Video no YouTube:
+### Video explicação:
 https://youtu.be/hnuuLNTRFgc
 
 ---
