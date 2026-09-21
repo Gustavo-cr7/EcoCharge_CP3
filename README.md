@@ -33,6 +33,13 @@ O sistema recebe como parâmetros:
 
 A partir desses dados, o EcoCharge realiza uma simulação por horário.
 
+---
+
+### Video no YouTube:
+https://youtu.be/hnuuLNTRFgc
+
+---
+
 ### Fluxo de decisão
 
 ```text
@@ -44,15 +51,16 @@ A partir desses dados, o EcoCharge realiza uma simulação por horário.
                        v
              Verificar demanda
                        |
+                 Horário de pico?
               +--------+--------+
               |                 |
-        Horário de pico?       Não
+             Sim               Não
               |                 |
-             Sim                |
+              |                 |
               |                 |
               v                 |
-       Reduzir demanda         |
-           em 20%              |
+       Reduzir demanda          |
+           em 20%               |
               |                 |
               +--------+--------+
                        |
@@ -72,3 +80,4 @@ A partir desses dados, o EcoCharge realiza uma simulação por horário.
                        |            |
                        v            v
                  Usar Bateria    Usar Rede
+
