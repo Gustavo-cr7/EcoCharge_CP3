@@ -1,0 +1,85 @@
+┌──────────────────────────────────────┐
+│          ENTRADAS DA SIMULAÇÃO       │
+├──────────────────────────────────────┤
+│ • Horários: 06h às 22h               │
+│ • Consumo do eletroposto             │
+│ • Geração de energia solar           │
+│ • Nível inicial da bateria           │
+│ • Capacidade da bateria              │
+└──────────────────┬───────────────────┘
+                   │
+                   ▼
+┌──────────────────────────────────────┐
+│          SERVIDOR LOCAL PYTHON       │
+├──────────────────────────────────────┤
+│ HTTPServer                           │
+│ BaseHTTPRequestHandler               │
+│ localhost:8000                       │
+└──────────────────┬───────────────────┘
+                   │
+                   ▼
+┌──────────────────────────────────────┐
+│       GESTÃO INTELIGENTE DE ENERGIA  │
+├──────────────────────────────────────┤
+│                                      │
+│  1. Verifica a demanda               │
+│             │                        │
+│             ▼                        │
+│  2. Horário de pico                  │
+│         18h às 21h                   │
+│             │                        │
+│             │                        │
+│             ▼                        │
+│    Redução de demanda em 20%         │
+│                                      │
+│  3. Prioridade energética:           │
+│                                      │
+│       SOLAR                          │
+│         ↓                            │
+│       BATERIA                        │
+│         ↓                            │
+│     REDE ELÉTRICA                    │
+│                                      │
+│  4. Excedente solar → Bateria        │
+└──────────────────┬───────────────────┘
+                   │
+                   ▼
+┌──────────────────────────────────────┐
+│       PROCESSAMENTO DOS DADOS        │
+├──────────────────────────────────────┤
+│              Pandas                  │
+│                                      │
+│ • Consumo original                   │
+│ • Consumo efetivo                    │
+│ • Energia solar utilizada            │
+│ • Energia da bateria                 │
+│ • Energia da rede                    │
+│ • Demanda reduzida                   │
+│ • Nível da bateria                   │
+│ • Ação do sistema                    │
+└──────────────────┬───────────────────┘
+                   │
+                   ▼
+┌──────────────────────────────────────┐
+│        VISUALIZAÇÃO DOS DADOS        │
+├──────────────────────────────────────┤
+│             Matplotlib               │
+│                                      │
+│ • Gráfico de consumo                 │
+│ • Geração solar                      │
+│ • Uso da bateria                     │
+│ • Uso da rede                        │
+└──────────────────┬───────────────────┘
+                   │
+                   ▼
+┌──────────────────────────────────────┐
+│          INTERFACE WEB               │
+├──────────────────────────────────────┤
+│             EcoCharge                │
+│                                      │
+│ • Indicadores energéticos            │
+│ • Gráfico                            │
+│ • Tabela por horário                 │
+│ • Análise dos resultados             │
+│ • Ações tomadas pelo sistema         │
+└──────────────────────────────────────┘
